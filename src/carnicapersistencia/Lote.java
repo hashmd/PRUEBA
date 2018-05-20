@@ -26,14 +26,17 @@ public class Lote implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+   
     private long referencia;
+     /*
     @Temporal(TemporalType.DATE);
     private Date fechaElabor;
     @Temporal(TemporalType.DATE);
     private Date fechaconsumo;
     @OneToMany(mappedBy="lote");
             private List<Producto> productos;
-
+       private int id;
+*/
   
     public long getReferencia() {
         return referencia;
@@ -66,6 +69,8 @@ public class Lote implements Serializable {
     public void setProductos(List<Producto> productos) {
         this.productos = productos;
     }
+    
+    /*
 
     public void setId(Long id) {
         this.id = id;
@@ -96,4 +101,5 @@ public class Lote implements Serializable {
         return "carnicapersistencia.Lote[ id=" + id + " ]";
     }
     
+*/
 }
